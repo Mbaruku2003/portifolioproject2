@@ -1,0 +1,121 @@
+body {
+    background-image: url('../emergencysosbody.jpg');
+    background-size: cover; /* Ensures the flag covers the entire viewport */
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: waving 5s infinite ease-in-out;
+    margin: 0; /* Removes default body margin */
+    height: 100vh;
+    padding: 0; /* Makes sure the body height is the full viewport */
+}
+
+@lkeyframes waving {
+    0% { background-position: center; transform: rotateY(0deg) translateX(0); }
+    25% { background-position: left; transform: rotateY(10deg) translateX(-5px); }
+    50% { background-position: center; transform: rotateY(0deg) translateX(0); }
+    75% { background-position: right; transform: rotateY(-10deg) translateX(5px); }
+    100% { background-position: center; transform: rotateY(0deg) translateX(0); }
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background: none; /* Keep the existing background */
+}
+
+h1 {
+    color: red; /* Make the h1 text white */
+    font-size: 36px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loader {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    perspective: 600px;
+}
+
+.loader span {
+    position: absolute;
+    border: 10px solid aqua;
+    border-radius: 50%; /* Make the shapes circular */
+}
+
+.loader span:nth-child(1) {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: animate 8s linear infinite;
+}
+
+.loader span:nth-child(2) {
+    top: 15px; /* Adjusted for consistent spacing */
+    left: 15px; /* Adjusted for consistent spacing */
+    right: 15px;
+    bottom: 15px;
+    animation: animate 4s linear infinite;
+}
+
+.loader span:nth-child(3) {
+    top: 30px; /* Adjusted for consistent spacing */
+    left: 30px; /* Adjusted for consistent spacing */
+    right: 30px;
+    bottom: 30px;
+    animation: animate 3s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; /* Adjust the font size */
+    color: #fff; /* Text color */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+}
+
+.loader span:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 50%;
+    background: #FF0;
+}
+
+.loader span:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 10px;
+    height: 50%;
+    background: rgb(0, 255, 55);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateY(-360deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+h1 {
+    flood-color: white;
+}

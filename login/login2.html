@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Leonard Mbaruku Jembe">
+    <meta name="Description" content="This is a login page for a website">
+    <link rel="stylesheet" type="text/css" href="../login/styles/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Retrieve the values of the input fields
+            const username = document.querySelector('input[type="text"]').value;
+            const password = document.querySelector('input[type="password"]').value;
+
+            // Simple validation (replace with actual validation logic)
+            if (username === 'admin' && password === 'password') {
+                // Redirect to the next page on successful login
+                window.location.href = 'emergent.html'; // Replace with the URL of your next page
+            } else {
+                alert('Invalid login credentials.'); // Handle failed login
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color: red;">emergencysos</h1>
+    <div class="wrapper">
+        <form onsubmit="handleLogin(event)">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#"> Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="../login/signup.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

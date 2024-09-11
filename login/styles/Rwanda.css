@@ -1,0 +1,17 @@
+body {
+    background-image: url('../../web_flask/web_static/images/rwandaflag.png');
+    background-size: cover; /* Ensures the flag covers the entire viewport */
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: waving 5s infinite ease-in-out;
+    margin: 0; /* Removes default body margin */
+    height: 100vh; /* Makes sure the body height is the full viewport */
+}
+
+@kenyframes waving {
+    0% { background-position: center; transform: rotateY(0deg) translateX(0); }
+    25% { background-position: left; transform: rotateY(10deg) translateX(-5px); }
+    50% { background-position: center; transform: rotateY(0deg) translateX(0); }
+    75% { background-position: right; transform: rotateY(-10deg) translateX(5px); }
+    100% { background-position: center; transform: rotateY(0deg) translateX(0); }
+}

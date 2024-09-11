@@ -1,0 +1,141 @@
+<head>
+    <meta charset="utf-8">
+    <title>emergencysos</title>
+    <link rel="stylesheet" type="text/css" href="../login/styles/tanzania.css" />
+    <link rel="stylesheet" type="text/css" href="../login/styles/103-common.css"/>
+    <link rel="stylesheet" type="text/css" href="../login/styles/103-filters.css" />
+    <link rel="stylesheet" type="text/css" href="../login/styles/103-footer.css" />
+    <link rel="stylesheet" type="text/css" href="../login/styles/103-header.css" />
+    <link rel="stylesheet" type="text/css" href="../login/styles/103-places.css"/>
+    <link rel='shortcut icon' href="../images/icon.png" />
+    <style>
+        article {
+            background-image: url('../web_flask/web_static/images/southsudan.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: green;
+            height: 100vh; /* Set the height of the body to 100% of the viewport height */
+        }
+        body {
+            background-image: url('../web_flask/web_static/images/southsudan.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        
+            color: green;
+            height: 100vh; 
+            background-color: oceanblue;
+        }
+        h1 {
+            color: red;
+        }
+        h2 {
+            color: yellow;
+        }
+        p {
+            color: black;
+        }
+    </style>
+    <script>
+        function callEmergency1() {
+            var number = "112";
+            var url = "tel:" + number;
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        function callEmergency2() {
+            var number = "115";
+            var url = "tel:" + number;
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        function callEmergency3() {
+            var number = "114";
+            var url = "tel:" + number;
+            window.location.href = url;
+        }
+    </script>
+
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <h1>emergencysos</h1>
+
+    </header>
+    <p style="text-align: center; color:blue;">This is emergencysos South Sudan, to obtain contacts to a certain service number, press the specific emergency service button</p>
+    <div class="container">
+
+        <!-- Your content here -->
+        <article>
+        <h2 style="text-align: center;">Available Services</h2>
+        <div class="price_by_night">
+        </div>
+        <div class="information" role="list">
+
+        </div>
+        <div class="user"></div>
+        <div class="description">
+            <p>The following are buttons specifically used for specic numbers.Make sure that you select the exact emergencyservice you need
+            </p>
+        </div>
+        <div class="amenities" role="list">
+            <h2 style="text-align: center;">Choose the services you need</h2>
+<style>
+    /* Add this CSS code */
+    li.button {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 20px; /* Make the button oval shape */
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        margin: 5px;
+        transition: opacity 0.5s; /* Add transition effect */
+    }
+
+    /* Add this CSS code for hover effect */
+    li.button:hover {
+        opacity: 0.5; /* Make the button 50% transparent */
+    }
+
+</style>
+
+
+<!-- The existing code -->
+<ul>
+    <li class="button" onclick="callEmergency1()">Police services</li>
+    <li class="button" onclick="callEmergency2()">Firefighter services</li>
+    <li class="button" onclick="callEmergency3()">emergency healthcare services</li>
+</ul>
+            <div class=reviews>
+                <h2>Reviews</h2>
+                <ul>
+                    <li>
+                        <h3>Galant Rezos on January 25, 2002</h3>
+                        <p>
+                            "I received a sense of security in my motorcycle home in Ethiopia, but I was not knowledgeable about how to do it. However, I was fortunate to find this program and it helped me and made me feel safer. Thank you."
+                        </p>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </article>
+    <div class="loader" style="bottom: 0px; right: 0px;">
+        <span></span>
+        <span></span>
+        <span><div class="text-center">emergencysos</div></span>
+    </div>
+    </div>
+    <footer>
+        <p style="color: blue;">emergencysos</p>
+    </footer>
+</body>
+
+</html>
+
